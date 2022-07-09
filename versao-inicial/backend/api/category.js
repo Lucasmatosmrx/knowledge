@@ -28,6 +28,8 @@ module.exports = (app) => {
   };
 
   const remove = async (req, res) => {
-    
+    try{
+      existsOrError(res.params.id, "Código de Categoria não informadas")
+    }
   }
 };
