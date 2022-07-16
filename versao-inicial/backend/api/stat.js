@@ -11,7 +11,7 @@ module.exports = (app) => {
       const defaultStat = {
         users: 0,
         categories: 0,
-        articles: 0,
+        createdAt: 0,
       };
       res.json(stat || defaultStat);
     });
