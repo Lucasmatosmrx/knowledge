@@ -3,7 +3,6 @@ const passport = require("passport");
 const passportJwt = require("passport-jwt");
 const { Strategy, ExtractJwt } = passportJwt;
 
-//função que retorna app como paramento
 module.exports = (app) => {
   const params = {
     secretOrKey: authSecret,
