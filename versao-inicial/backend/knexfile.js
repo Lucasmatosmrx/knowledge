@@ -1,3 +1,4 @@
+//quando coloco {} que é destructor consigo pegar o atributo db de dentro do arquivo .env
 const { db } = require("./.env");
 
 module.exports = {
