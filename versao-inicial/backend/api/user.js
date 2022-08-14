@@ -32,7 +32,7 @@ module.exports = (app) => {
     } catch (msg) {
       return res.status(400).send(msg);
     }
-    user.password = encryptPassword();
+    user.password = encryptPassword(user.password);
     delete user.confirmPassword;
 
     if (user.id) {
